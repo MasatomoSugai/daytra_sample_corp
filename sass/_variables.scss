@@ -1,0 +1,92 @@
+// -----
+// 設定
+// -----
+
+// 色
+$color-black: #3e3e3e; 
+$color-white: #ffffff;
+$color-gray: #f3f3f3;
+$color-orange: #ffaa3b; 
+$color-blue: #4973ff;
+$color-red: #ff4646;
+// $color-background-base:#FFFFFF1A;
+$color-background-base:#f3f3f3;
+
+
+$font-color-black: #3e3e3e; // テキスト色
+$font-color-white: #ffffff; // テキスト色
+
+$hover-opacity: 0.7; // 透過度
+$hover-background-color:#4973ff1a;//ニュースをホバーした時の背景色。color-blueの透過度0.5？
+$hover-color-orange:#F18900; //コンバージョンボタンのホバー時
+
+//コンバージョンボタン
+$conversion-btn-base:$color-orange;
+$conversion-btn-hover:#f18900;
+$conversion-btn-disabled:#B2B2B2;
+
+// フォームパーツ
+$shadow-mouse-over: #4973FF33; //透過度0.2
+$shadow-textarea:#4973FF80; //入力時、マウスオーバー時
+
+// レイアウト幅
+$layout-width-canvas: 1280px;
+$layout-width-inner: 1200px;
+
+// 階層
+$layer: (
+	modal: 100, // モダール
+	drawer: 40, // ドロワー
+	floating: 30, // フローティングアイテム
+	header: 20, // ヘッダー
+	footer: 10, // フッター
+	default: 1,
+);
+
+
+// 余白
+$padding-pc: 40px;
+$padding-sp: 16px;
+
+// ヘッダー高さ
+$header-height-pc: 83px;
+$header-height-sp: 68px;
+
+// フォント
+$font-family-default:'Montserrat',YuGothic,'Yu Gothic', sans-serif; // 標準フォント
+
+// $font-family-english: sans-serif;
+$font-family-base: $font-family-default;
+//和文フォントサイズ
+$font-size-ja-h1: 32px;
+$font-size-ja-h2: 28px;
+$font-size-ja-h3: 20px;
+$font-size-ja-p: 16px;
+$font-size-ja-p-small: 12px;
+//英文フォントサイズ
+$font-size-en-h1: 38px;
+$font-size-en-h2: 36px;
+$font-size-en-h3: 20px;
+$font-size-en-p: 18px;
+$font-size-en-p-small: 14px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+
+$line-height-base: 1.5;
+
+// ブレークポイント
+$breakpoints: (
+	"sp": "(max-width: 767px)",
+	"tab-only": "(min-width: 768px) and (max-width: #{$layout-width-inner + $padding-pc * 2 - 1px})",
+	"tab": "(max-width: #{$layout-width-inner + $padding-pc * 2 - 1px})",
+	"pc": "(min-width: #{$layout-width-inner})",
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: sp) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
