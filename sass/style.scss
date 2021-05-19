@@ -235,7 +235,7 @@ a {
   height: 648px;
   max-width: 1280px;
   background-image: url(../images/picture/mv@2x.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 120px;
   position: relative;
@@ -1157,7 +1157,7 @@ textarea[type="textarea"]:hover{
   }
 }
 
-.contact-submit {
+.contact__submit {
   text-align: center;
 }
 
