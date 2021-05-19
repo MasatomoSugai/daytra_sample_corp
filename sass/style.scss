@@ -1162,6 +1162,17 @@ textarea[type="textarea"]:hover{
 }
 
 
+.contact-message {
+  margin-top: 60px;
+  text-align: center;
+  display: none;
+
+  &.-error {
+    color: #f00;
+  }
+}
+
+
 // トップへ戻るボタン
 
 .totop {

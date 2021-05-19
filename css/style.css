@@ -1274,6 +1274,16 @@ textarea[type="textarea"]:hover {
   text-align: center;
 }
 
+.contact-message {
+  margin-top: 60px;
+  text-align: center;
+  display: none;
+}
+
+.contact-message.-error {
+  color: #f00;
+}
+
 .totop {
   position: fixed;
   bottom: 1rem;
