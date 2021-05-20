@@ -491,8 +491,8 @@ a {
 .results-inner {
   width: 100%;
   max-width: 1200px;
-  padding-left: 40px;
   margin-top: 220px;
+  margin-left: auto;
 }
 
 @media (max-width: 767px) {
@@ -738,8 +738,7 @@ a {
   top: 144px;
   z-index: -1;
   background-color: #3e3e3e;
-  width: 100%;
-  max-width: 980px;
+  width: calc(100% - 300px);
   height: 600px;
 }
 
@@ -1050,8 +1049,7 @@ a {
   right: 301px;
   top: -145px;
   height: 504px;
-  width: 100%;
-  max-width: 980px;
+  width: calc(100% - 300px);
   z-index: -1;
 }
 
@@ -1073,6 +1071,7 @@ a {
   padding-bottom: 60px;
   padding-top: 60px;
   text-align: center;
+  border-radius: 10px 10px 0 0;
 }
 
 .contact-header .section-title {
@@ -1081,6 +1080,7 @@ a {
 
 .contact__item {
   background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
 }
 
 .contact__controls {
@@ -1275,7 +1275,7 @@ textarea[type="textarea"]:hover {
 }
 
 .contact-message {
-  margin-top: 60px;
+  padding: 120px 0;
   text-align: center;
   display: none;
 }

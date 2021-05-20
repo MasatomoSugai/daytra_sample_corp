@@ -461,8 +461,9 @@ a {
 .results-inner {
   width: 100%;
 	max-width: $layout-width-inner;
-  padding-left: $padding-pc;
+  // padding-left: $padding-pc;
   margin-top: 220px;
+  margin-left: auto;
 
 	@include mq('sp') {
 		padding-left:0;
@@ -685,8 +686,7 @@ a {
   top:144px;
   z-index: -1;
   background-color: $color-black;
-  width: 100%;
-  max-width: 980px;
+  width: calc(100% - 300px);
   height: 600px;
 
   @include mq('sp')  {
@@ -957,8 +957,7 @@ transform: rotate(-45deg);
   right: 301px;
   top:-145px;
   height: 504px;
-  width: 100%;
-  max-width: 980px;
+  width: calc(100% - 300px);
   z-index: -1;
 }
 
@@ -983,6 +982,7 @@ transform: rotate(-45deg);
   padding-bottom: 60px;
   padding-top: 60px;
   text-align: center;
+  border-radius: 10px 10px 0 0 ;
   .section-title {
     margin-bottom: 32px;
   }
@@ -990,6 +990,7 @@ transform: rotate(-45deg);
 
 .contact__item {
   background-color: $color-white;
+  border-radius: 0 0 10px 10px;
 }
 .contact__controls {
   width: 100%;
@@ -1163,7 +1164,7 @@ textarea[type="textarea"]:hover{
 
 
 .contact-message {
-  margin-top: 60px;
+  padding: 120px 0;
   text-align: center;
   display: none;
 
