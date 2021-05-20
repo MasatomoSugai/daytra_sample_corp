@@ -460,10 +460,7 @@ a {
 
 .results-inner {
   width: 100%;
-	max-width: $layout-width-inner;
-  // padding-left: $padding-pc;
   margin-top: 220px;
-  margin-left: auto;
 
 	@include mq('sp') {
 		padding-left:0;
@@ -473,12 +470,12 @@ a {
 
 .results {
   background-color: $color-black;
-  max-width: 1240px;
   padding: 60px 0 60px 60px;
-  
+  width: calc(100% - 40px);
+  margin-left: auto;
   @include mq('sp') {
-    margin-left: 0;
-    padding-left: 15px;
+    width: 100%;
+    padding: 40px 15px;
   }
 }
 .left {
@@ -488,12 +485,8 @@ a {
   }
 }
 
-/*==================================================
-カードの大きさがどうしても調節できない         
-===================================*/
+
 .results-item {
-  // width: 300px;  
-  // height: 366px;
   margin-right: 40px;
   background-color: $color-white;
 
@@ -502,22 +495,25 @@ a {
   }
 
   &__img {
-    width: 400px;
     @include mq('sp') {
-      width: 274px;
     }
 
   }
   &__description {
-    width: 400px;
     padding: 16px 16px;
-    @include mq('sp') {
-      width: 274px;
-    }
 
     h3 {
       font-size: $font-size-ja-h3;
-      font-weight: $font-weight-bold
+      font-weight: $font-weight-bold;
+
+      @include mq('sp') {
+        font-size: 14px;
+      }
+    }
+    p {
+      @include mq('sp') {
+        font-size: 12px;
+      }
     }
   }
 }
@@ -531,11 +527,12 @@ a {
   }
 
   .slider img {
-    width:400px;/*スライダー内の画像を横幅100%に*/
+    width:100%;/*スライダー内の画像を横幅100%に*/
     height:auto;
 
     @include mq('sp') {
-      width: 274px;
+      // width: 274px;
+      width: 100%;
     }
   }
 

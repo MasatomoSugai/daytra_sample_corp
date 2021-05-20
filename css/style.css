@@ -490,9 +490,7 @@ a {
 
 .results-inner {
   width: 100%;
-  max-width: 1200px;
   margin-top: 220px;
-  margin-left: auto;
 }
 
 @media (max-width: 767px) {
@@ -504,14 +502,15 @@ a {
 
 .results {
   background-color: #3e3e3e;
-  max-width: 1240px;
   padding: 60px 0 60px 60px;
+  width: calc(100% - 40px);
+  margin-left: auto;
 }
 
 @media (max-width: 767px) {
   .results {
-    margin-left: 0;
-    padding-left: 15px;
+    width: 100%;
+    padding: 40px 15px;
   }
 }
 
@@ -525,9 +524,6 @@ a {
   }
 }
 
-/*==================================================
-カードの大きさがどうしても調節できない         
-===================================*/
 .results-item {
   margin-right: 40px;
   background-color: #ffffff;
@@ -539,30 +535,25 @@ a {
   }
 }
 
-.results-item__img {
-  width: 400px;
-}
-
-@media (max-width: 767px) {
-  .results-item__img {
-    width: 274px;
-  }
-}
-
 .results-item__description {
-  width: 400px;
   padding: 16px 16px;
-}
-
-@media (max-width: 767px) {
-  .results-item__description {
-    width: 274px;
-  }
 }
 
 .results-item__description h3 {
   font-size: 20px;
   font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .results-item__description h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .results-item__description p {
+    font-size: 12px;
+  }
 }
 
 /*==================================================
@@ -574,14 +565,14 @@ a {
 }
 
 .slider img {
-  width: 400px;
+  width: 100%;
   /*スライダー内の画像を横幅100%に*/
   height: auto;
 }
 
 @media (max-width: 767px) {
   .slider img {
-    width: 274px;
+    width: 100%;
   }
 }
 
