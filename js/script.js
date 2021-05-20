@@ -1,9 +1,6 @@
 $(function(){
 
-// ドロワーメニュー
-  $(document).ready(function(){
-    $('.drawer').drawer();
-  });
+
 
   // トップへ戻るボタン
 var toTopBtn = $('#totop');

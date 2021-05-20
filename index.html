@@ -532,7 +532,6 @@
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script src="./js/script.js"></script>
 <script src="./js/drawer.js"></script>
 <!-- wow_js -->
 <!-- <link rel="stylesheet" href="/css/animete.css"> -->
@@ -547,6 +546,20 @@
 <!-- スライダー -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="./js/script.js"></script>
+
+
+<script>
+  jQuery.noConflict(); 
+  (function($) {
+  
+  $(document).ready(function() {
+    $('.drawer').drawer();
+  });
+  })(jQuery);
+  </script>
+
 
 </body>
 </html>
