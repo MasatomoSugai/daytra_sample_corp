@@ -101,9 +101,7 @@ a {
   &:hover {
     color: $color-white;
     background-color: $color-black;
-
   }
-  
 }
 
 .btn-black {
@@ -120,14 +118,12 @@ a {
   &:hover {
     color: $color-black;
     background-color: $color-white;
-
   }
 
   @include mq('sp') {
     padding: 16px 100px;
     font-size: $font-size-en-p;
   }
-  
 }
 
 .btn-outer {
@@ -173,15 +169,12 @@ a {
   right: 20px;
 }
 
-
-
 // ヘッダー
 
 .header__logo {
   font-size: $font-size-en-h3;
   font-weight: 800;
   line-height: 68px;
-
 }
 
 .header {
@@ -280,7 +273,6 @@ a {
       text-align: left;
       letter-spacing: 0;
     }
-
     
   }
   &-text {
@@ -293,10 +285,8 @@ a {
       margin-bottom: 30px;
       text-align: left;
     }
-
   }
 }
-
 
 // セクション共通
 
@@ -521,87 +511,47 @@ a {
 /*==================================================
 スライダーのためのcss         
 ===================================*/
-  .slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-    width:100%;
-    // margin:0 auto;
+
+.swiper-wrapper {
+  margin-bottom: 32px;
+}
+
+.swiper-pagination{
+  position: static;
+  text-align: left;
+
+  @include mq('sp') {
+    text-align: center;
   }
+}
 
-  .slider img {
-    width:100%;/*スライダー内の画像を横幅100%に*/
-    height:auto;
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: $color-white;
+  opacity: 1;
+}
 
-    @include mq('sp') {
-      // width: 274px;
-      width: 100%;
-    }
-  }
-
-  /*ドットナビゲーションの設定*/
-
-  .slick-dots {
-    text-align:center;
-  margin:20px 0 0 0;
-  }
-
-  .slick-dots li {
-    display:inline-block;
-  margin:0 5px;
-  }
-
-  .slick-dots button {
-    color: transparent;
-    outline: none;
-    width:8px;/*ドットボタンのサイズ*/
-    height:8px;/*ドットボタンのサイズ*/
-    display:block;
-    border-radius:50%;
-    background:#ccc;/*ドットボタンの色*/
-  }
-
-  .slick-dots .slick-active button{
-    background:#333;/*ドットボタンの現在地表示の色*/
-  }
-
-  // オリジナルに調節
-  .slick-list {
-    overflow: scroll;
-  }
-
-  .slick-dots {
-    text-align: left;
-    height: 80px;
-    line-height: 80px;
-
-    button {
-      width: 12px;
-      height: 12px;
-      background-color: $color-white;
-    }
-    li {
-      margin:0 8px;
-    }
-  }
-
-
-.slick-dots .slick-active button {
-  background-color: $color-white;
+.swiper-pagination-bullet-active {
   position: relative;
-  
   &::after {
     content: "";
     position: absolute;
-    top:-5px;
-    left: -5px;
-    border: 1px solid $color-white;
+    border: 2px solid $color-white;
+    width: 21px;
+    height: 21px;
     border-radius: 10px;
-    width: 22px;
-    height: 22px;
+    top: -4.5px;
+    left: -4.5px;
   }
 }
 
 .btn__outer-view-more {
+  margin-top: 40px;
+
   @include mq('sp') {
     text-align: center;
+    margin-top: 24px;
   }
 }
 
@@ -772,10 +722,6 @@ a {
     width: 100%;
     
   }
-}
-
-.qa__inner {
-
 }
 
 .qa__heading {
